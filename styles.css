@@ -271,6 +271,8 @@ h1, h2, h3 {
 .case-card {
   border: 2px solid var(--black);
   display: flex;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .case-card-link {

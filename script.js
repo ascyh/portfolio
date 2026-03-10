@@ -15,6 +15,18 @@ navMenu.addEventListener('click', (e) => {
   }
 });
 
+// Hero hover image follows cursor (index page only)
+const hoverTarget = document.querySelector('.hero-name-text');
+const hoverImg = document.querySelector('.hero-hover-img');
+if (hoverTarget && hoverImg) {
+  hoverTarget.addEventListener('mouseenter', () => hoverImg.classList.add('visible'));
+  hoverTarget.addEventListener('mouseleave', () => hoverImg.classList.remove('visible'));
+  hoverTarget.addEventListener('mousemove', (e) => {
+    hoverImg.style.left = e.clientX + 20 + 'px';
+    hoverImg.style.top = e.clientY + 20 + 'px';
+  });
+}
+
 // Smooth scroll for #UX anchor (index page only)
 const uxLink = document.querySelector('a[href="#UX"]');
 if (uxLink) {
@@ -31,6 +43,10 @@ if (cards.length) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        entry.target.addEventListener('transitionend', () => {
+          entry.target.style.transitionDelay = '';
+          entry.target.classList.add('entered');
+        }, { once: true });
         cardObserver.unobserve(entry.target);
       }
     });

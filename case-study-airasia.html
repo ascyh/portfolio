@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AirAsia Case Study — Amanda Sarah Chin</title>
+  <meta name="description" content="Improving the flight booking experience by reducing drop-off during AirAsia's ancillary selection flow.">
+  <meta property="og:title" content="Not Dazed, Not Confused — Amanda Sarah Chin">
+  <meta property="og:description" content="Increasing clarity in AirAsia's booking flow to reduce drop-off.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,400;1,200;1,400&family=Plus+Jakarta+Sans:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Amanda Chin</a>
+      <div class="nav-menu" id="navMenu">
+        <a href="https://linkedin.com/in/amandasarahchin" class="nav-link">LinkedIn</a>
+      </div>
+      <button class="menu-button" id="menuButton" aria-label="Menu" aria-expanded="false">
+        <span class="menu-icon">
+          <span class="menu-icon-line"></span>
+          <span class="menu-icon-line"></span>
+          <span class="menu-icon-line"></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- CASE STUDY HERO -->
+  <section class="cs-hero">
+    <div class="cs-hero-container">
+      <p class="cs-hero-label">case study</p>
+      <h1 class="cs-hero-title">Not dazed, not confused: Increasing clarity in AirAsia's flow</h1>
+      <p class="cs-hero-subtitle">Come make that booking, pronto!</p>
+    </div>
+    <div class="cs-hero-image-wrapper">
+      <img src="images/cover-airasia.jpg" alt="AirAsia case study cover showing a colourful flamingo illustration" class="cs-hero-image">
+    </div>
+  </section>
+
+  <!-- CASE STUDY BODY -->
+  <div class="cs-body">
+
+    <!-- Overview -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">overview</h2>
+        <div class="cs-overview-grid">
+          <div class="cs-overview-main">
+            <p class="cs-body-text">AirAsia's booking flow was losing users at the ancillary selection stage — the screens where travellers choose seats, add baggage, and pick meals. What should have been a quick set of optional upgrades had turned into a confusing maze of upsells that left users unsure of what they'd selected and what they were paying for.</p>
+            <p class="cs-body-text">I was brought in to untangle the experience: reduce friction, increase clarity, and ultimately decrease the drop-off rate without sacrificing ancillary revenue.</p>
+          </div>
+          <div class="cs-overview-meta">
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Role</h3>
+              <p class="cs-meta-value">UX Designer</p>
+            </div>
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Timeline</h3>
+              <p class="cs-meta-value">6 weeks</p>
+            </div>
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Tools</h3>
+              <p class="cs-meta-value">Figma, Hotjar, Google Analytics</p>
+            </div>
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Team</h3>
+              <p class="cs-meta-value">1 designer, 1 researcher, 2 engineers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">the problem</h2>
+        <p class="cs-body-text">Analytics showed a 34% drop-off rate at the ancillary selection screens. Users who had already chosen their flights and entered passenger details were abandoning the booking right before payment. Hotjar recordings revealed a pattern: users scrolled up and down repeatedly, clicked the same buttons multiple times, and often restarted the flow from scratch.</p>
+        <p class="cs-body-text">The root issue was a lack of clarity. Users couldn't tell what was included, what was optional, and what they'd already chosen. The running total was buried, and the "skip" option was visually de-emphasised to the point of near-invisibility.</p>
+        <blockquote class="cs-pullquote">
+          <p>"I just wanted to book a flight. I didn't realise I'd have to make fifteen more decisions before I could pay."</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">research</h2>
+        <p class="cs-body-text">I started with a heuristic evaluation of the existing flow, mapping every decision point and identifying where cognitive load spiked. Then I analysed the funnel data from Google Analytics to pinpoint the exact screens with the highest exit rates.</p>
+        <p class="cs-body-text">To understand the "why" behind the numbers, I ran 8 moderated usability tests where participants booked a real flight while thinking aloud. Three major pain points surfaced consistently: unclear pricing, too many steps, and no way to see a summary of selections.</p>
+        <div class="cs-highlight-grid">
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">34%</span>
+            <p class="cs-highlight-label">Drop-off rate at the add-on selection screens</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">8</span>
+            <p class="cs-highlight-label">Moderated usability test sessions conducted</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">3</span>
+            <p class="cs-highlight-label">Major pain points identified across all participants</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">the solution</h2>
+        <p class="cs-body-text">I redesigned the ancillary flow around three principles: progressive disclosure, persistent context, and clear escape routes. Instead of presenting every option at once, each add-on category was presented as a focused step with only the most relevant choices visible upfront.</p>
+        <p class="cs-body-text">A persistent booking summary bar anchored to the bottom of the screen showed the running total and a list of selected add-ons, so users always knew where they stood. The "skip" option was redesigned as a clear, equally-weighted alternative to "add" — no more dark patterns.</p>
+        <p class="cs-body-text">Pricing was restructured to show the per-person and per-flight breakdown, eliminating the mental arithmetic that was causing hesitation. Each screen also included a "What's included" baseline so users could make informed opt-in decisions.</p>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">results</h2>
+        <p class="cs-body-text">The redesigned flow was A/B tested against the existing experience over a four-week period. Drop-off at the ancillary stage decreased significantly, and average booking completion time was reduced. Interestingly, ancillary revenue per booking remained stable — users weren't buying less, they were just less confused about what they were buying.</p>
+        <p class="cs-body-text">The persistent summary bar became the most interacted-with element in the new flow, validating the hypothesis that users needed constant pricing context to feel confident proceeding.</p>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="cs-section cs-section--last">
+      <div class="cs-container">
+        <h2 class="section-heading">reflection</h2>
+        <p class="cs-body-text">The biggest lesson from this project was that user needs and business goals aren't always in tension. The initial assumption was that making it easier to skip add-ons would hurt revenue. In practice, reducing confusion made users more willing to engage with the options rather than abandoning the entire flow.</p>
+        <p class="cs-body-text">I also learned the value of combining quantitative and qualitative research. The analytics told us where users were leaving, but only the usability tests explained why. Neither alone would have led to the right solution.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- CASE STUDY NAVIGATION -->
+  <nav class="cs-nav-bar">
+    <div class="cs-nav-container">
+      <a href="case-study-task-tracker.html" class="cs-nav-link cs-nav-prev">
+        <span class="cs-nav-direction">Previous</span>
+        <span class="cs-nav-title">Helping students track schoolwork</span>
+      </a>
+      <a href="/#UX" class="cs-nav-link cs-nav-all">All Case Studies</a>
+      <a href="case-study-health-startup.html" class="cs-nav-link cs-nav-next">
+        <span class="cs-nav-direction">Next</span>
+        <span class="cs-nav-title">Improving brand trust for conversion</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <div class="footer-wrapper">
+    <footer class="footer-component">
+      <div class="footer-container">
+        <div class="footer-content">
+          <span class="footer-text">Thanks for stopping by my little corner of the Internet.</span>
+          <span class="footer-copyright">&copy; 2026 Amanda Chin</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

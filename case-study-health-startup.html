@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SLS Search Case Study — Amanda Sarah Chin</title>
+  <meta name="description" content="Redesigning search on Singapore's national learning platform by challenging a year-long semantic search plan and fixing what was actually broken.">
+  <meta property="og:title" content="Redesigning Search on SLS — Amanda Sarah Chin">
+  <meta property="og:description" content="67% of users preferred the new design. The bigger win was stopping two builds that would have failed.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,400;1,200;1,400&family=Plus+Jakarta+Sans:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Amanda Chin</a>
+      <div class="nav-menu" id="navMenu">
+        <a href="https://linkedin.com/in/amandasarahchin" class="nav-link">LinkedIn</a>
+      </div>
+      <button class="menu-button" id="menuButton" aria-label="Menu" aria-expanded="false">
+        <span class="menu-icon">
+          <span class="menu-icon-line"></span>
+          <span class="menu-icon-line"></span>
+          <span class="menu-icon-line"></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- CASE STUDY HERO -->
+  <section class="cs-hero">
+    <div class="cs-hero-container">
+      <p class="cs-hero-label">case study</p>
+      <h1 class="cs-hero-title">Count on me: Improving brand trust for conversion</h1>
+      <p class="cs-hero-subtitle">Sendin' em down that marketing funnel.</p>
+    </div>
+    <div class="cs-hero-image-wrapper">
+      <img src="images/cover-health-startup.png" alt="SLS search redesign case study cover" class="cs-hero-image">
+    </div>
+  </section>
+
+  <!-- CASE STUDY BODY -->
+  <div class="cs-body">
+
+    <!-- Section 1 -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">67% of users preferred the new design. The bigger win was stopping two builds that would have failed to solve users' problems.</h2>
+        <p class="cs-body-text">SLS is Singapore's national learning platform for students and teachers across the country. Search was broken. The team's plan was semantic search, a year in the making. I came in and challenged it.</p>
+        <p class="cs-body-text">I owned research, problem definition, and stakeholder alignment. The UI team handled interaction and visual design.</p>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">5 failure points. Semantic search fixed maybe 1, expensively.</h2>
+        <p class="cs-body-text">I pulled search logs, reviewed user feedback, ran a quick survey, and read academic literature on child-computer interaction. When direct user access is limited, published research on common behaviours like search fills that gap fast. This shaped everything that followed.</p>
+        <p class="cs-body-text">What I found made the semantic search plan hard to justify.</p>
+        <p class="cs-body-text">Our UI forced filtering before searching, the opposite of how users expected search to work. 44% rated our UI complicated or very complicated.</p>
+        <p class="cs-body-text">Vocabulary gaps were breaking results completely. Our latest exciting feature "interactive digital textbook" returned only 2 results; its less-used acronym "IDT" returned 167 results. Our search's inability to read acronyms was causing significant reduced ROI for other teams' work. "Foundational english" returned nothing because the subject is called "foundation english."</p>
+        <p class="cs-body-text">The literature explained why this mattered so much: children's developing motor and literacy skills mean more typing errors than adults. Exact keyword matching punished them for it.</p>
+        <p class="cs-body-text">Then there was the problem nobody had caught. A national policy shift had moved students to subject-based banding but our metadata hadn't kept up. Students searching Secondary 1 Mathematics G3 found nothing. Every module was still tagged "Secondary 1 Express." No search algorithm would have fixed this.</p>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">Convincing a team to abandon a year of momentum</h2>
+        <p class="cs-body-text">Semantic search had been sold to senior management as the answer. When I sat with them, I realised their concerns matched exactly what I'd found. They knew users were failing to find things. They just didn't have evidence for why.</p>
+        <p class="cs-body-text">I mapped every problem against what semantic search could realistically solve and walked through real failing queries. The academic literature reframed typos, acronym matching, and vocabulary mismatches from minor annoyances to foundational issues affecting most users. Getting these basics right would do 80% of the heavy lifting.</p>
+        <blockquote class="cs-pullquote">
+          <p>"Semantic search is just one small part of it."</p>
+        </blockquote>
+        <div class="cs-placeholder">Placeholder: quote from senior management</div>
+        <div class="cs-placeholder">Placeholder: before/after UI screenshots</div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">I stopped an AI recommender before it cost the team a full sprint</h2>
+        <p class="cs-body-text">Mid-project, a proposal came in for AI-generated module recommendations. I hypothesised it would fail because most modules lacked the structured content AI needed to summarise.</p>
+        <p class="cs-body-text">Rather than flag this without evidence I embedded the question into my usability study. I asked users what information they needed to evaluate a module. The answer was success criteria, and it was missing from most content. Nothing for AI to pull from.</p>
+        <p class="cs-body-text">Users said they needed to know the modules' success criteria for students to evaluate modules. I proved this was missing from most content. Nothing for AI to pull from.</p>
+        <p class="cs-body-text">That killed the recommender. This data is seeding my future build to redesign our search cards, without needing a separate study.</p>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">This is one of our first builds where we're measuring whether it actually worked</h2>
+        <p class="cs-body-text">I made the case for building data hooks directly into search to compare user behaviour before and after launch, with senior management's support. Most builds go out without this. We're currently building data hooks so that we can track click-through rates so we can keep iterating rather than assume success.</p>
+        <p class="cs-body-text">67% of 30 test users preferred the new design. 39% specifically valued filtering by questions, a feature that existed before but was buried.</p>
+        <p class="cs-body-text">Leadership now wants this search revamp as the reference model for all search across the system.</p>
+        <div class="cs-placeholder">Placeholder: quote from senior management on data-led approach</div>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="cs-section cs-section--last">
+      <div class="cs-container">
+        <h2 class="cs-section-title">What I'd do differently</h2>
+        <p class="cs-body-text">Starting with 2 sprints meant curriculum partners got looped in late, which slowed the metadata fix and meant my team struggled to have a deeper grasp of their content tagging workflow. I'd push for a realistic timeline before work starts, not after, so that we can unpack the underlying workflow for content developers more clearly. This would help us consider how to redesign this workflow too and stop problems upstream.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- CASE STUDY NAVIGATION -->
+  <nav class="cs-nav-bar">
+    <div class="cs-nav-container">
+      <a href="case-study-airasia.html" class="cs-nav-link cs-nav-prev">
+        <span class="cs-nav-direction">Previous</span>
+        <span class="cs-nav-title">Increasing clarity in AirAsia's flow</span>
+      </a>
+      <a href="/#UX" class="cs-nav-link cs-nav-all">All Case Studies</a>
+      <a href="case-study-task-tracker.html" class="cs-nav-link cs-nav-next">
+        <span class="cs-nav-direction">Next</span>
+        <span class="cs-nav-title">Helping students track schoolwork</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <div class="footer-wrapper">
+    <footer class="footer-component">
+      <div class="footer-container">
+        <div class="footer-content">
+          <span class="footer-text">Thanks for stopping by my little corner of the Internet.</span>
+          <span class="footer-copyright">&copy; 2026 Amanda Chin</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

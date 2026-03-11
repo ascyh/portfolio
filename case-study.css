@@ -1,0 +1,337 @@
+/* ===== CASE STUDY HERO ===== */
+.cs-hero {
+  background-color: var(--mint);
+  border-bottom: 1px solid var(--black);
+  padding: 6rem 0 0;
+  text-align: center;
+}
+
+.cs-hero-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cs-hero-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.cs-hero-title {
+  font-family: 'Literata', serif;
+  font-weight: 200;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.45;
+  color: var(--text);
+  max-width: 720px;
+  margin: 0 auto 1rem;
+}
+
+.cs-hero-subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 3rem;
+}
+
+.cs-hero-image-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cs-hero-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 500px;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid var(--black);
+  border-bottom: none;
+}
+
+/* ===== CASE STUDY BODY ===== */
+.cs-body {
+  background-color: var(--cream);
+}
+
+.cs-section {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--black);
+}
+
+.cs-section--last {
+  border-bottom: none;
+}
+
+.cs-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cs-body-text {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  max-width: 680px;
+}
+
+.cs-body-text + .cs-body-text {
+  margin-top: 1rem;
+}
+
+.cs-section-title {
+  font-family: 'Literata', serif;
+  font-weight: 200;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1.45;
+  color: var(--text);
+  max-width: 680px;
+  margin: 0 0 1.5rem 0;
+}
+
+.cs-placeholder {
+  max-width: 680px;
+  margin: 1.5rem 0;
+  padding: 1.5rem 2rem;
+  border: 1px dashed var(--accent);
+  border-radius: 12px;
+  background-color: var(--mint);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-style: italic;
+}
+
+/* ===== OVERVIEW GRID ===== */
+.cs-overview-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.cs-meta-item {
+  margin-bottom: 1.5rem;
+}
+
+.cs-meta-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.25rem 0;
+}
+
+.cs-meta-value {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0;
+}
+
+/* ===== PULL QUOTE ===== */
+.cs-pullquote {
+  border-left: 3px solid var(--accent);
+  padding: 1.5rem 0 1.5rem 2rem;
+  margin: 2rem 0;
+  max-width: 680px;
+}
+
+.cs-pullquote p {
+  font-family: 'Literata', serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0;
+}
+
+/* ===== HIGHLIGHT / STAT CARDS ===== */
+.cs-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cs-highlight-card {
+  background-color: var(--mint);
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cs-highlight-number {
+  font-family: 'Literata', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cs-highlight-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0;
+}
+
+/* ===== CASE STUDY PREV/NEXT NAV ===== */
+.cs-nav-bar {
+  background-color: var(--mint);
+  border-top: 1px solid var(--black);
+}
+
+.cs-nav-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cs-nav-link {
+  text-decoration: none;
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.cs-nav-direction {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.cs-nav-title {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.cs-nav-prev {
+  text-align: left;
+}
+
+.cs-nav-next {
+  text-align: right;
+}
+
+.cs-nav-all {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  position: relative;
+}
+
+.cs-nav-all::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background: currentColor;
+  transform: scaleX(1);
+}
+
+.cs-nav-all:hover::after {
+  animation: underlineSwipe 0.6s ease;
+}
+
+/* ===== RESPONSIVE: max-width 991px ===== */
+@media (max-width: 991px) {
+  .cs-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-hero-title {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+  }
+
+  .cs-section {
+    padding: 3rem 0;
+  }
+
+  .cs-hero {
+    padding: 5rem 0 0;
+  }
+}
+
+/* ===== RESPONSIVE: max-width 767px ===== */
+@media (max-width: 767px) {
+  .cs-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-nav-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .cs-nav-prev,
+  .cs-nav-next {
+    text-align: center;
+  }
+
+  .cs-hero {
+    padding: 4rem 0 0;
+  }
+}
+
+/* ===== RESPONSIVE: max-width 479px ===== */
+@media (max-width: 479px) {
+  .cs-hero-title {
+    font-size: 1.3rem;
+  }
+
+  .cs-section {
+    padding: 2.5rem 0;
+  }
+
+  .cs-pullquote {
+    padding-left: 1.25rem;
+  }
+
+  .cs-body-text {
+    font-size: 0.9rem;
+  }
+
+  .cs-section-title {
+    font-size: 1.1rem;
+  }
+
+  .cs-hero-image {
+    max-height: 300px;
+  }
+
+  .cs-highlight-card {
+    padding: 1.5rem;
+  }
+
+  .cs-highlight-number {
+    font-size: 2rem;
+  }
+}

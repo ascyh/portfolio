@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Tracker Case Study — Amanda Sarah Chin</title>
+  <meta name="description" content="Designing a task management feature for Singapore's national learning platform to help students track schoolwork.">
+  <meta property="og:title" content="From Chaos to Checklists — Amanda Sarah Chin">
+  <meta property="og:description" content="Helping students track schoolwork with a unified task dashboard.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,400;1,200;1,400&family=Plus+Jakarta+Sans:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Amanda Chin</a>
+      <div class="nav-menu" id="navMenu">
+        <a href="https://linkedin.com/in/amandasarahchin" class="nav-link">LinkedIn</a>
+      </div>
+      <button class="menu-button" id="menuButton" aria-label="Menu" aria-expanded="false">
+        <span class="menu-icon">
+          <span class="menu-icon-line"></span>
+          <span class="menu-icon-line"></span>
+          <span class="menu-icon-line"></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- CASE STUDY HERO -->
+  <section class="cs-hero">
+    <div class="cs-hero-container">
+      <p class="cs-hero-label">case study</p>
+      <h1 class="cs-hero-title">From chaos to checklists: Helping students track schoolwork</h1>
+      <p class="cs-hero-subtitle">Ferris Bueller ain't getting his day off.</p>
+    </div>
+    <div class="cs-hero-image-wrapper">
+      <img src="images/cover-task-tracker.jpg" alt="Task Tracker case study cover showing colorful paperclips and stationery" class="cs-hero-image">
+    </div>
+  </section>
+
+  <!-- CASE STUDY BODY -->
+  <div class="cs-body">
+
+    <!-- Overview -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">overview</h2>
+        <div class="cs-overview-grid">
+          <div class="cs-overview-main">
+            <p class="cs-body-text">Students on Singapore's national learning platform were struggling to keep track of their homework and assignments. With teachers posting tasks across different channels and subjects, nothing lived in one place. I was tasked with designing a centralised task management feature that would give students a clear, unified view of everything they needed to do.</p>
+            <p class="cs-body-text">The goal was simple: reduce the cognitive load of tracking schoolwork so students could spend less time figuring out what's due and more time actually doing it.</p>
+          </div>
+          <div class="cs-overview-meta">
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Role</h3>
+              <p class="cs-meta-value">Product Designer</p>
+            </div>
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Timeline</h3>
+              <p class="cs-meta-value">8 weeks</p>
+            </div>
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Tools</h3>
+              <p class="cs-meta-value">Figma, Maze, Notion</p>
+            </div>
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Team</h3>
+              <p class="cs-meta-value">2 designers, 1 PM, 4 engineers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">the problem</h2>
+        <p class="cs-body-text">Students were juggling multiple communication channels to keep track of homework. Some teachers posted on the platform, others used messaging apps, and a few still relied on verbal announcements. The result was a fragmented experience where students regularly missed deadlines — not because they didn't care, but because they simply didn't know.</p>
+        <p class="cs-body-text">Parents were equally frustrated. They had no visibility into what their children were expected to complete, making it difficult to provide support at home.</p>
+        <blockquote class="cs-pullquote">
+          <p>"I check three different apps every night just to make sure I haven't missed anything. Sometimes I still do."</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">research</h2>
+        <p class="cs-body-text">I conducted interviews with 12 students across different age groups and 6 teachers to understand how homework was currently assigned, tracked, and completed. I also ran a two-week diary study where students logged every time they encountered a homework-related frustration.</p>
+        <p class="cs-body-text">Three key patterns emerged: information was scattered, deadlines were unclear, and there was no sense of progress or completion.</p>
+        <div class="cs-highlight-grid">
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">5+</span>
+            <p class="cs-highlight-label">Average platforms students used to track assignments</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">73%</span>
+            <p class="cs-highlight-label">Of students missed deadlines due to scattered information</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">12</span>
+            <p class="cs-highlight-label">Student interviews conducted across age groups</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">the solution</h2>
+        <p class="cs-body-text">I designed a unified task dashboard that pulled all assignments into a single view, regardless of which teacher or subject they came from. The dashboard featured subject-based filtering, deadline sorting, and visual progress indicators so students could see at a glance what needed attention.</p>
+        <p class="cs-body-text">Key design decisions included a card-based layout that grouped tasks by urgency rather than subject (since students think in terms of "what's due soon" not "what's for math"), and a simple check-off interaction that gave a satisfying sense of completion.</p>
+        <p class="cs-body-text">I also designed a parent-facing summary view — a weekly digest that showed upcoming deadlines and completed work, giving parents just enough visibility without overwhelming them.</p>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="section-heading">results</h2>
+        <p class="cs-body-text">After a pilot rollout across 8 schools, the task tracker showed a measurable impact on student organisation. Task completion rates improved, and teacher feedback indicated that fewer students were asking "what's the homework?" at the start of class.</p>
+        <p class="cs-body-text">The parent summary view had unexpectedly high adoption, with over 60% of parents in the pilot schools checking it at least once a week. This suggested a strong latent need that the platform hadn't previously addressed.</p>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="cs-section cs-section--last">
+      <div class="cs-container">
+        <h2 class="section-heading">reflection</h2>
+        <p class="cs-body-text">This project taught me the value of designing for a young audience. Students are surprisingly articulate about their frustrations when you ask the right questions, but they also have very low tolerance for anything that feels like extra work. Every interaction needed to earn its place.</p>
+        <p class="cs-body-text">The diary study was the most valuable research method here — it surfaced frustrations that students had normalised and wouldn't have mentioned in a standard interview. I'd use this approach again for any project where habits and workarounds are central to the problem.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- CASE STUDY NAVIGATION -->
+  <nav class="cs-nav-bar">
+    <div class="cs-nav-container">
+      <a href="case-study-health-startup.html" class="cs-nav-link cs-nav-prev">
+        <span class="cs-nav-direction">Previous</span>
+        <span class="cs-nav-title">Improving brand trust for conversion</span>
+      </a>
+      <a href="/#UX" class="cs-nav-link cs-nav-all">All Case Studies</a>
+      <a href="case-study-airasia.html" class="cs-nav-link cs-nav-next">
+        <span class="cs-nav-direction">Next</span>
+        <span class="cs-nav-title">Increasing clarity in AirAsia's flow</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <div class="footer-wrapper">
+    <footer class="footer-component">
+      <div class="footer-container">
+        <div class="footer-content">
+          <span class="footer-text">Thanks for stopping by my little corner of the Internet.</span>
+          <span class="footer-copyright">&copy; 2026 Amanda Chin</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

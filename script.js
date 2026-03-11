@@ -16,7 +16,7 @@ navMenu.addEventListener('click', (e) => {
 });
 
 // Hero hover image follows cursor (index page only)
-const hoverTarget = document.querySelector('.hero-name-text');
+const hoverTarget = document.querySelector('.hero-intro-line');
 const hoverImg = document.querySelector('.hero-hover-img');
 if (hoverTarget && hoverImg) {
   hoverTarget.addEventListener('mouseenter', () => hoverImg.classList.add('visible'));
@@ -24,6 +24,18 @@ if (hoverTarget && hoverImg) {
   hoverTarget.addEventListener('mousemove', (e) => {
     hoverImg.style.left = e.clientX + 20 + 'px';
     hoverImg.style.top = e.clientY + 20 + 'px';
+  });
+}
+
+// Headline hover image follows cursor (index page only)
+const headlineTarget = document.querySelector('.hero-fire-line');
+const headlineHoverImg = document.getElementById('headlineHoverImg');
+if (headlineTarget && headlineHoverImg) {
+  headlineTarget.addEventListener('mouseenter', () => headlineHoverImg.classList.add('visible'));
+  headlineTarget.addEventListener('mouseleave', () => headlineHoverImg.classList.remove('visible'));
+  headlineTarget.addEventListener('mousemove', (e) => {
+    headlineHoverImg.style.left = e.clientX + 20 + 'px';
+    headlineHoverImg.style.top = e.clientY + 20 + 'px';
   });
 }
 
@@ -55,6 +67,24 @@ if (cards.length) {
   cards.forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.12}s`;
     cardObserver.observe(card);
+  });
+}
+
+// About section staggered entrance animation (index page only)
+const aboutCols = document.querySelectorAll('.about-col');
+if (aboutCols.length) {
+  const aboutObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        aboutObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  aboutCols.forEach((col, i) => {
+    col.style.transitionDelay = `${i * 0.15}s`;
+    aboutObserver.observe(col);
   });
 }
 

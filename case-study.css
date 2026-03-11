@@ -58,6 +58,7 @@
 /* ===== CASE STUDY BODY ===== */
 .cs-body {
   background-color: var(--cream);
+  padding-bottom: 3rem;
 }
 
 .cs-section {
@@ -105,22 +106,30 @@
   font-style: italic;
 }
 
-/* ===== META ROW (horizontal) ===== */
-.cs-meta-row {
-  display: flex;
-  gap: 2.5rem;
-  margin-bottom: 1.5rem;
+/* ===== META CARD ===== */
+.cs-meta-card {
+  background: var(--mint);
+  border: 1px solid var(--black);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
 }
 
-.cs-meta-row .cs-meta-item {
+.cs-meta-card .cs-meta-item {
+  margin-bottom: 1rem;
+}
+
+.cs-meta-card .cs-meta-item:last-child {
   margin-bottom: 0;
 }
 
-@media (max-width: 479px) {
-  .cs-meta-row {
-    flex-direction: column;
-    gap: 1rem;
-  }
+.cs-meta-card .cs-meta-label {
+  font-size: 0.65rem;
+  margin-bottom: 0.1rem;
+}
+
+.cs-meta-card .cs-meta-value {
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
 /* ===== OVERVIEW GRID ===== */
@@ -171,12 +180,22 @@
   margin: 0;
 }
 
+.cs-pullquote-cite {
+  display: block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
 /* ===== HIGHLIGHT / STAT CARDS ===== */
 .cs-highlight-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
+  max-width: 680px;
 }
 
 .cs-highlight-card {
@@ -205,7 +224,7 @@
 
 /* ===== CASE STUDY PREV/NEXT NAV ===== */
 .cs-nav-bar {
-  background-color: var(--mint);
+  background-color: var(--cream);
   border-top: 1px solid var(--black);
 }
 
@@ -222,6 +241,26 @@
   text-decoration: none;
   color: var(--text);
   font-family: 'Plus Jakarta Sans', sans-serif;
+  position: relative;
+}
+
+.cs-nav-link .cs-nav-title {
+  position: relative;
+}
+
+.cs-nav-link .cs-nav-title::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -1px;
+  left: 0;
+  background: currentColor;
+  transform: scaleX(1);
+}
+
+.cs-nav-link:hover .cs-nav-title::after {
+  animation: underlineSwipe 0.6s ease;
 }
 
 .cs-nav-direction {

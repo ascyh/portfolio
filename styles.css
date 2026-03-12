@@ -413,7 +413,6 @@ h1, h2, h3 {
 
 .footer-copyright {
   white-space: nowrap;
-  color: var(--gray600);
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -901,13 +900,13 @@ h1, h2, h3 {
   .case-card-title {
     margin-top: 10px;
     margin-right: 0;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    font-size: 1.35rem;
+    line-height: 1.7rem;
   }
 
   .case-card-subtitle {
-    font-size: 0.85rem;
-    line-height: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 
   .title-spacer {

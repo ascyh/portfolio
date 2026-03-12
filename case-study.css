@@ -83,6 +83,13 @@
   margin-top: 1rem;
 }
 
+.cs-body-image {
+  max-width: 680px;
+  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+}
+
 .cs-section-title {
   font-family: 'Literata', serif;
   font-weight: 200;

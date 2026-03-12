@@ -80,10 +80,26 @@
         <h2 class="cs-section-title">5 failure points. Semantic search fixed maybe 1, expensively.</h2>
         <p class="cs-body-text">I pulled search logs, reviewed user feedback, ran a quick survey, and read academic literature on child-computer interaction. When direct user access is limited, published research on common behaviours like search fills that gap fast. This shaped everything that followed.</p>
         <p class="cs-body-text">What I found made the semantic search plan hard to justify.</p>
-        <p class="cs-body-text">Our UI forced filtering before searching, the opposite of how users expected search to work. 44% rated our UI complicated or very complicated.</p>
-        <p class="cs-body-text">Vocabulary gaps were breaking results completely. Our latest exciting feature "interactive digital textbook" returned only 2 results; its less-used acronym "IDT" returned 167 results. Our search's inability to read acronyms was causing significant reduced ROI for other teams' work. "Foundational english" returned nothing because the subject is called "foundation english."</p>
-        <p class="cs-body-text">The literature explained why this mattered so much: children's developing motor and literacy skills mean more typing errors than adults. Exact keyword matching punished them for it.</p>
-        <p class="cs-body-text">Then there was the problem nobody had caught. A national policy shift had moved students to subject-based banding but our metadata hadn't kept up. Students searching Secondary 1 Mathematics G3 found nothing. Every module was still tagged "Secondary 1 Express." No search algorithm would have fixed this.</p>
+        <img src="images/search-filters-old.gif" alt="Old search filters UI showing the complicated filtering experience" class="cs-body-image">
+        <p class="cs-body-text">Our UI forced filtering before searching, the opposite of how users expected search to work.</p>
+        <div class="cs-highlight-grid">
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">44%</span>
+            <p class="cs-highlight-label">rated our UI complicated or very complicated</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">2 vs 167</span>
+            <p class="cs-highlight-label">results depending on whether users searched for interactive digital textbooks or IDT</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">16</span>
+            <p class="cs-highlight-label">filter combinations a user might need to try just to find the right module</p>
+          </div>
+        </div>
+        <br>
+        <p class="cs-body-text">The literature also showed that children's developing motor and literacy skills led to more typos. Our exact keyword matching punished them for it.</p>
+        <p class="cs-body-text">Then there was the problem nobody had caught. A national policy shift had moved students to subject-based banding but our metadata hadn't kept up. Students searching Secondary 1 Mathematics G3 found only 4 out of 62 modules. Every module was still tagged "Secondary 1 Express." No search algorithm would have fixed this.</p>
+        <p class="cs-body-text">The gap between how users searched and how content was tagged was costing other teams' work its visibility.</p>
       </div>
     </section>
 

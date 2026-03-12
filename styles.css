@@ -57,6 +57,7 @@ h1, h2, h3 {
   border-bottom: 1px solid var(--black);
   position: sticky;
   top: 0;
+  padding-top: env(safe-area-inset-top);
   animation: navSink 0.6s ease 0.2s both;
 }
 
@@ -846,12 +847,16 @@ h1, h2, h3 {
 
 /* ===== RESPONSIVE: max-width 479px ===== */
 @media (max-width: 479px) {
+  .nav-logo {
+    font-size: 0.85rem;
+  }
+
   .section-heading {
     margin-bottom: 1rem;
   }
 
   .hero-headline {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     line-height: 1.5;
   }
 

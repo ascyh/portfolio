@@ -423,7 +423,7 @@ h1, h2, h3 {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
   column-gap: 1.5rem;
   row-gap: 2rem;
   align-items: start;
@@ -917,6 +917,10 @@ h1, h2, h3 {
 
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-col:first-child {
+    padding-right: 0;
   }
 
   .about-text {

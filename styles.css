@@ -205,6 +205,10 @@ h1, h2, h3 {
   .hero-fire-line {
     cursor: pointer;
   }
+
+  .painting-hover-trigger {
+    cursor: pointer;
+  }
 }
 
 @media (hover: none) {

@@ -39,6 +39,18 @@ if (headlineTarget && headlineHoverImg) {
   });
 }
 
+// Painting hover image follows cursor (index page only)
+const paintingTarget = document.querySelector('.painting-hover-trigger');
+const paintingHoverImg = document.getElementById('paintingHoverImg');
+if (paintingTarget && paintingHoverImg) {
+  paintingTarget.addEventListener('mouseenter', () => paintingHoverImg.classList.add('visible'));
+  paintingTarget.addEventListener('mouseleave', () => paintingHoverImg.classList.remove('visible'));
+  paintingTarget.addEventListener('mousemove', (e) => {
+    paintingHoverImg.style.left = e.clientX + 20 + 'px';
+    paintingHoverImg.style.top = e.clientY + 20 + 'px';
+  });
+}
+
 // Smooth scroll for #UX anchor (index page only)
 const uxLink = document.querySelector('a[href="#UX"]');
 if (uxLink) {

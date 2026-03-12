@@ -51,6 +51,18 @@ if (paintingTarget && paintingHoverImg) {
   });
 }
 
+// Dance hover image follows cursor (index page only)
+const danceTarget = document.querySelector('.dance-hover-trigger');
+const danceHoverImg = document.getElementById('danceHoverImg');
+if (danceTarget && danceHoverImg) {
+  danceTarget.addEventListener('mouseenter', () => danceHoverImg.classList.add('visible'));
+  danceTarget.addEventListener('mouseleave', () => danceHoverImg.classList.remove('visible'));
+  danceTarget.addEventListener('mousemove', (e) => {
+    danceHoverImg.style.left = e.clientX + 20 + 'px';
+    danceHoverImg.style.top = e.clientY - danceHoverImg.offsetHeight - 20 + 'px';
+  });
+}
+
 // Smooth scroll for #UX anchor (index page only)
 const uxLink = document.querySelector('a[href="#UX"]');
 if (uxLink) {

@@ -380,6 +380,7 @@ h1, h2, h3 {
 .case-card-subtitle {
   color: var(--text);
   font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.7;
 }
 
 .title-spacer {

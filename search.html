@@ -41,7 +41,7 @@
       <p class="cs-hero-subtitle">How I stopped us from building the wrong solution to solve the wrong problems.</p>
     </div>
     <div class="cs-hero-image-wrapper">
-      <img src="images/cover-health-startup.png" alt="SLS search redesign case study cover" class="cs-hero-image">
+      <img src="images/cover-search.png" alt="SLS search redesign case study cover" class="cs-hero-image">
     </div>
   </section>
 
@@ -57,6 +57,23 @@
             <p class="cs-body-text">SLS is Singapore's national learning platform for students and teachers across the country. Search was broken. The team's plan was semantic search, a year in the making. I came in and challenged it.</p>
             <br>
             <img src="images/search-filters-new.gif" alt="New search filters and results UI" class="cs-body-image">
+            <p class="cs-body-text">Our new search UI reads typos and reduces cognitive load for filtering.</p>
+            
+            <div class="cs-highlight-grid">
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">67%</span>
+            <p class="cs-highlight-label">of 30 test users preferred the new design</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">39%</span>
+            <p class="cs-highlight-label">valued filtering by questions, an existing feature that was buried</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="cs-highlight-number">1st</span>
+            <p class="cs-highlight-label">resource-related build with data hooks to validate success</p>
+          </div>
+        </div>
+
           </div>
           <div class="cs-meta-card">
             <div class="cs-meta-item">
@@ -83,7 +100,8 @@
         <p class="cs-body-text">I pulled search logs, reviewed user feedback, ran a quick survey, and read academic literature on child-computer interaction. When direct user access is limited, published research on common behaviours like search fills that gap fast. This shaped everything that followed.</p>
         <p class="cs-body-text">What I found made the semantic search plan hard to justify.</p>
         <img src="images/search-filters-old.gif" alt="Old search filters UI showing the complicated filtering experience" class="cs-body-image">
-        <p class="cs-body-text">Our UI forced filtering before searching, the opposite of how users expected search to work.</p>
+        <p class="cs-body-text">Our UI forced users to filter before they pressed search. The opposite of how users expected it to work.</p>
+        <br>
         <div class="cs-highlight-grid">
           <div class="cs-highlight-card">
             <span class="cs-highlight-number">44%</span>
@@ -115,17 +133,17 @@
           <p>"Oh, I see. Semantic search was actually just one small part of it."</p>
           <cite class="cs-pullquote-cite">— Product Teammate, after my presentation</cite>
         </blockquote>
-        <div class="cs-placeholder">Placeholder: before/after UI screenshots</div>
+
       </div>
     </section>
 
     <!-- Section 4 -->
     <section class="cs-section">
       <div class="cs-container">
-        <h2 class="cs-section-title">I stopped an AI recommender before it cost the team a full sprint</h2>
+        <h2 class="cs-section-title">I stopped an AI recommender before it cost the team 2 sprints and thousands of dollars.</h2>
         <p class="cs-body-text">Mid-project, a proposal came in for AI-generated module recommendations. I hypothesised it would fail because I saw we hadn't dived deeply enough into users' journey in selecting resources, or what content AI could use to make its recommendation.</p>
-        <p class="cs-body-text">Rather than flag this without evidence I embedded the question into my usability study. I asked users what information they needed to evaluate a module. I proved this was missing from most content. Nothing for AI to pull from.</p>
-        <p class="cs-body-text">That killed the recommender. This data is seeding my future build to redesign our search cards, without needing a separate study.</p>
+        <p class="cs-body-text">Rather than flag this without evidence, I embedded the question into my usability study. The information users needed to evaluate a module was missing from most content. Nothing for AI to pull from.</p>
+        <p class="cs-body-text">That killed the recommender. This data is seeding other future builds, without needing a separate study.</p>
       </div>
     </section>
 
@@ -133,24 +151,11 @@
     <section class="cs-section">
       <div class="cs-container">
         <h2 class="cs-section-title">This is one of our first builds where we're measuring whether it actually worked</h2>
-        <p class="cs-body-text">I made the case for building data hooks directly into search to compare user behaviour before and after launch, with senior management's support. Most builds go out without this. We're currently building data hooks so that we can track click-through rates so we can keep iterating rather than assume success.</p>
+        <p class="cs-body-text">I made the case for building data hooks directly into search to compare user behaviour before and after launch, with senior management's support. This way, we can keep iterating rather than assume success.</p>
         <p class="cs-body-text">Leadership now wants this search revamp as the reference model for all search across the system.</p>
-        <div class="cs-highlight-grid">
-          <div class="cs-highlight-card">
-            <span class="cs-highlight-number">67%</span>
-            <p class="cs-highlight-label">of 30 test users preferred the new design</p>
-          </div>
-          <div class="cs-highlight-card">
-            <span class="cs-highlight-number">39%</span>
-            <p class="cs-highlight-label">valued filtering by questions, an existing feature that was buried</p>
-          </div>
-          <div class="cs-highlight-card">
-            <span class="cs-highlight-number">1st</span>
-            <p class="cs-highlight-label">build with data hooks to validate success</p>
-          </div>
-        </div>
+        
         <blockquote class="cs-pullquote">
-          <p>"Thought it is opportune to convey a special note from [boss]. He says that the revamped search feature is very well done. Keep up the great work!"</p>
+          <p>"Thought it is opportune to convey a special note from [key stakeholder]. He says that the revamped search feature is very well done. Keep up the great work!"</p>
           <cite class="cs-pullquote-cite">— Product Lead</cite>
         </blockquote>
       </div>
@@ -160,8 +165,8 @@
     <section class="cs-section">
       <div class="cs-container">
         <h2 class="cs-section-title">What I'd do differently</h2>
-        <p class="cs-body-text">Getting users on board for research is genuinely hard. Time is always tight. Knowing how useful it was to add the AI module recommender question into my usability study, I'd go further next time. I'd vibe code rough explorations of possible search card redesigns for users to interact with in the same study. Even a loose early sensing of what direction to take cards would give us a stronger foundation going into this redesign in the future.</p>
-        <p class="cs-body-text">I'd also have pushed harder on the data hooks. When we built, the team was comfortable assuming that any interaction signal indicated relevance. But clicks mean different things depending on what action was taken. If we had captured more granular data about specific actions on search cards, it would have told us not just whether results were useful, but how users were actually engaging with them. That would have directly informed the card redesign and given us a much sharper picture of what to fix next.</p>
+        <p class="cs-body-text">Scope creep is real, but so is the challenge of finding users. Knowing how we shaped product direction by adding the AI module recommender question into my usability study, I might vibe code rough explorations of search card redesigns for users to try. Even a loose early sensing of what direction to would give us a stronger foundation going into this redesign in the future.</p>
+        <p class="cs-body-text">I'd also have pushed harder on the data hooks. When we built, the team was comfortable assuming that any interaction signal indicated relevance. But if we had captured more granular data about specific actions users took, we'd know how users were actually engaging with the results, while informing our future card redesign.</p>
       </div>
     </section>
 

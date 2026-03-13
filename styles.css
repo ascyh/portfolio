@@ -944,6 +944,14 @@ h1, h2, h3 {
     padding: 3.5rem 0;
   }
 
+  .testimonials-container {
+    padding: 0 1rem;
+  }
+
+  .testimonial-carousel {
+    padding: 0 0.5rem;
+  }
+
   .testimonial-card {
     padding: 1.5rem;
   }
@@ -954,7 +962,7 @@ h1, h2, h3 {
 
   .testimonial-prev,
   .testimonial-next {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
   }
 }

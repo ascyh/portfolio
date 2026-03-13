@@ -174,8 +174,25 @@
 .cs-overview-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 3rem;
+  grid-template-rows: auto 1fr;
+  gap: 0 3rem;
   align-items: start;
+}
+
+.cs-overview-grid .cs-section-title {
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 1.5rem;
+}
+
+.cs-overview-main {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.cs-meta-card {
+  grid-column: 2;
+  grid-row: 1 / -1;
 }
 
 .cs-meta-item {
@@ -359,7 +376,27 @@
 @media (max-width: 991px) {
   .cs-overview-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+  }
+
+  .cs-meta-card {
+    grid-column: 1;
+    grid-row: auto;
+    order: 1;
+  }
+
+  .cs-overview-grid .cs-section-title {
+    grid-column: 1;
+    grid-row: auto;
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .cs-overview-main {
+    grid-column: 1;
+    grid-row: auto;
+    order: 3;
   }
 
   .cs-hero-title {

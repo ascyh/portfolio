@@ -949,7 +949,15 @@ h1, h2, h3 {
   }
 
   .testimonial-carousel {
-    padding: 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+  }
+
+  .testimonial-track-wrapper {
+    order: 1;
+    width: 100%;
   }
 
   .testimonial-card {
@@ -960,9 +968,32 @@ h1, h2, h3 {
     font-size: 0.9rem;
   }
 
-  .testimonial-prev,
+  .testimonial-prev {
+    position: static;
+    transform: none;
+    order: 2;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    color: var(--gray600);
+    margin-top: 1.5rem;
+  }
+
+  .testimonial-dots {
+    order: 3;
+    flex: 1;
+  }
+
   .testimonial-next {
-    width: 36px;
-    height: 36px;
+    position: static;
+    transform: none;
+    order: 4;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    color: var(--gray600);
+    margin-top: 1.5rem;
   }
 }

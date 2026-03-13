@@ -135,11 +135,12 @@ if (track) {
   let touchStartX = 0;
   let touchEndX = 0;
 
-  track.addEventListener('touchstart', (e) => {
+  const wrapper = track.parentElement;
+  wrapper.addEventListener('touchstart', (e) => {
     touchStartX = e.changedTouches[0].clientX;
   }, { passive: true });
 
-  track.addEventListener('touchend', (e) => {
+  wrapper.addEventListener('touchend', (e) => {
     touchEndX = e.changedTouches[0].clientX;
     const diff = touchStartX - touchEndX;
     if (Math.abs(diff) > 50) {

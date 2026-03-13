@@ -131,3 +131,28 @@ if (track) {
   nextBtn.addEventListener('click', () => goToSlide(current + 1));
   dots.forEach((dot, i) => dot.addEventListener('click', () => goToSlide(i)));
 }
+
+// Lightbox for case study body images
+const lightboxOverlay = document.getElementById('lightboxOverlay');
+const lightboxImg = document.getElementById('lightboxImg');
+if (lightboxOverlay && lightboxImg) {
+  document.querySelectorAll('.cs-body-image').forEach((img) => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightboxOverlay.classList.add('active');
+    });
+  });
+
+  lightboxOverlay.addEventListener('click', () => {
+    lightboxOverlay.classList.remove('active');
+  });
+
+  lightboxImg.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') lightboxOverlay.classList.remove('active');
+  });
+}

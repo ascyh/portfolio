@@ -130,6 +130,22 @@ if (track) {
   prevBtn.addEventListener('click', () => goToSlide(current - 1));
   nextBtn.addEventListener('click', () => goToSlide(current + 1));
   dots.forEach((dot, i) => dot.addEventListener('click', () => goToSlide(i)));
+
+  // Touch swipe support
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  track.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].clientX;
+  }, { passive: true });
+
+  track.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 50) {
+      goToSlide(diff > 0 ? current + 1 : current - 1);
+    }
+  });
 }
 
 // Lightbox for case study body images

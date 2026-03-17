@@ -255,8 +255,8 @@
 /* ===== PULL QUOTE ===== */
 .cs-pullquote {
   border-left: 3px solid var(--accent);
-  padding: 1.5rem 0 1.5rem 2rem;
-  margin: 2rem 0;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin: 1.25rem 0;
   max-width: 680px;
 }
 
@@ -264,8 +264,8 @@
   font-family: 'Literata', serif;
   font-style: italic;
   font-weight: 200;
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.5;
   color: var(--text);
   margin: 0;
 }

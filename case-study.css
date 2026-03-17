@@ -87,6 +87,7 @@
   max-width: 680px;
   width: 100%;
   margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
   border-radius: 12px;
   border: 1px solid var(--black);
   cursor: zoom-in;

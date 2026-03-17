@@ -154,6 +154,7 @@ const lightboxOverlay = document.getElementById('lightboxOverlay');
 const lightboxImg = document.getElementById('lightboxImg');
 if (lightboxOverlay && lightboxImg) {
   document.querySelectorAll('.cs-body-image').forEach((img) => {
+    img.style.cursor = 'zoom-in';
     img.addEventListener('click', () => {
       lightboxImg.src = img.src;
       lightboxImg.alt = img.alt;

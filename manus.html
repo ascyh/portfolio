@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Amanda Chin | Manus AI Redesign</title>
+  <meta name="description" content="How I redesigned Manus AI's copy and checkpoints so that delegation feels like confidence.">
+  <meta property="og:title" content="Designing for greater trust in Manus AI — Amanda Sarah Chin">
+  <meta property="og:description" content="How I redesigned Manus AI's copy and checkpoints so that delegation feels like confidence.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,400;1,200;1,400&family=Plus+Jakarta+Sans:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Amanda Sarah Chin</a>
+      <div class="nav-menu" id="navMenu">
+        <a href="https://linkedin.com/in/amandasarahchin" class="nav-link" target="_blank" rel="noopener">LinkedIn &#x2197;&#xFE0E;</a>
+      </div>
+      <button class="menu-button" id="menuButton" aria-label="Menu" aria-expanded="false">
+        <span class="menu-icon">
+          <span class="menu-icon-line"></span>
+          <span class="menu-icon-line"></span>
+          <span class="menu-icon-line"></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- CASE STUDY HERO -->
+  <section class="cs-hero">
+    <div class="cs-hero-container">
+      <p class="cs-hero-label">case study</p>
+      <h1 class="cs-hero-title">Designing for greater trust in Manus AI</h1>
+      <p class="cs-hero-subtitle">How I redesigned Manus AI's copy and checkpoints so that delegation feels like confidence.</p>
+    </div>
+    <div class="cs-hero-image-wrapper">
+      <img src="images/cover-manus.jpg" alt="Manus AI case study cover" class="cs-hero-image">
+    </div>
+  </section>
+
+  <!-- CASE STUDY BODY -->
+  <div class="cs-body">
+
+    <!-- Section 1: Overview -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <div class="cs-overview-grid">
+          <h2 class="cs-section-title">&ldquo;It&rsquo;s like a doctor who just meets you for 5 minutes then gives you medicine. Can I really trust this doctor?&rdquo;</h2>
+          <div class="cs-overview-main">
+            <p class="cs-body-text">As an execution engine, Manus AI does what you delegate it. You give it a goal, it builds the thing, you come back later. That&rsquo;s the product&rsquo;s strength. But delegation only works if users trust the AI understood them before it started spending their credits.</p>
+            <p class="cs-body-text">After reading reviews on <a href="https://www.trustpilot.com/review/manus.im">Trustpilot</a>, reviews by expert users, and trying Manus out myself, I had a sense that with Manus, users may have trust issues. Cost felt unpredictable. And users could see AI work, but they didn&rsquo;t understand why it&rsquo;s making the choices it&rsquo;s making.</p>
+            <p class="cs-body-text">How much users trust an AI shapes whether they'll use it at all. When trust is low, people default to rejecting what the AI suggests, even when it's right. <a href="https://cacm.acm.org/opinion/understanding-algorithmic-aversion-a-bold-rejection-of-digital-dominion/">Researchers call this "algorithmic aversion"</a>: the instinct to override the machine because the process felt opaque or the system didn't seem to account for what mattered to you.</p>
+          
+            <p class="cs-body-text">To explore this topic of users' trust in Manus, I ran quick user impressions with 6 participants (2 developers, 4 non-developers, Singapore-based, none had used Manus before). Same prompt: &ldquo;Design a website for a new bank opening in Singapore.&rdquo;</p>
+            <p class="cs-body-text">Every participant said Manus should have asked more questions before building.</p>
+            <blockquote class="cs-pullquote">
+              <p>&ldquo;Using Manus felt like interacting with a passionate colleague who wants to get things done ASAP instead of wanting to have a discussion first.&rdquo;</p>
+              <cite class="cs-pullquote-cite">&mdash; Participant 1, non-developer</cite>
+            </blockquote>
+                    <blockquote class="cs-pullquote">
+          <p>Manus in 3 words: &ldquo;Naggy self-absorbed ... Like a naggy person who doesn&rsquo;t give me a chance to speak.&rdquo;</p>
+          <cite class="cs-pullquote-cite">&mdash; Participant 5, non-developer</cite>
+        </blockquote>
+            <p class="cs-body-text">While the lack of questions led to disengagement and irritation, the sharpest trust failure was in the output itself. Manus generated websites for all 6 users with MAS license numbers and security certifications but didn't urge users to check these for-compliance matters. A user could publish this &ldquo;completed and ready&rdquo; site and face serious legal consequences.</p>
+            <blockquote class="cs-pullquote">
+              <p>&ldquo;I was surprised that the AI added so easily that the site is MAS-approved but it&rsquo;s not actually. It made me feel creeped out that this was fake... all these liars.&rdquo;</p>
+              <cite class="cs-pullquote-cite">&mdash; Participant 3, non-developer</cite>
+            </blockquote>
+          </div>
+          <div class="cs-meta-card">
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Role</h3>
+              <p class="cs-meta-value">Product Designer</p>
+            </div>
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Contributions</h3>
+              <p class="cs-meta-value">Interaction Design, Conversation Design, User Research</p>
+            </div>
+            <div class="cs-meta-item">
+              <h3 class="cs-meta-label">Platform</h3>
+              <p class="cs-meta-value">Manus AI, by Meta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Checkpoint flow -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">Asking a few questions before building saves the iteration that&rsquo;s costly in tokens and engagement</h2>
+        <p class="cs-body-text">With Meta&rsquo;s acquisition of Manus in late 2025, we can expect more general, non-technical consumers to use it. Here, I assume that this user segment may lack detailed prompting skills and be used to unpacking their request through a conversation with AI, despite <a href="https://venturebeat.com/orchestration/why-meta-bought-manus-and-what-it-means-for-your-enterprise-ai-agent">asking Manus to perform more complex use cases</a>.</p>
+        <p class="cs-body-text">With <a href="https://openai.com/index/scaling-ai-for-everyone/">only ~5% of weekly ChatGPT users paying for the service</a>, this user group are likely to feel that an accurate artefact generated slower through their inputs would be a better use of money than a faster output they don&rsquo;t want.</p>
+        <blockquote class="cs-pullquote">
+          <p>&ldquo;Seeing it build something you don&rsquo;t want can be quite annoying. Because tokens. And it takes so long!&rdquo;</p>
+          <cite class="cs-pullquote-cite">&mdash; Participant 2, developer</cite>
+        </blockquote>
+        <p class="cs-body-text">I assumed that cost estimation may be technically difficult and/or expensive to build; these question checkpoints serve a complementary role by reassuring users that Manus understood them and that they're spending their credits well.</p>
+        <img src="images/manus_question_current.png" alt="Manus current pre-build checkpoint showing 8 bullet points" class="cs-body-image">
+        <p class="cs-body-text">My fix starts before the first line of code. With the prompt we used, Manus currently shows one pre-build checkpoint: 8 bullet points in a carousel. This is overwhelming for an internet audience that skims more than they read closely. Users may also not perceive that they're being "asked" anything.</p>
+               <blockquote class="cs-pullquote">
+              <p>&ldquo;Dude, they didn&rsquo;t ask me anything! It was so boring. I went to play Catan.&rdquo;</p>
+              <cite class="cs-pullquote-cite">&mdash; Participant 4, developer</cite>
+            </blockquote>
+        <blockquote class="cs-pullquote">
+              <p>&ldquo;Maybe it is how I have been interacting with other AI platforms but when I need something generated... it is important to have interim input to clarify.</p>
+              <cite class="cs-pullquote-cite">&mdash; Participant 6, non-developer who codes once a week for work</cite>
+            </blockquote>
+        <img src="images/manus_question_component.gif" alt="Manus question component for chunked checkpoint flow" class="cs-body-image">
+        <p class="cs-body-text">I broke this down into chunked questions with options to reduce cognitive burden of evaluating Manus' work from scratch. By helping users clarify their thinking, Manus can generate an output closer to what they want. Since these questions are crucial for output accuracy, they don't have a timer. Users' options also remain on screen so they can review their decisions later if need be.</p>
+        <img src="images/manus_question_component_2.gif" alt="Manus progressive question component with timer" class="cs-body-image">
+        <p class="cs-body-text">Later questions come with a timer, as Manus uses; the design assumes users might walk away after delegating to Manus. In my redesign, Manus helpfully flags crucial items that users need to pay attention to.</p>
+        <p class="cs-body-text">If the timer runs out, Manus proceeds with reasonable assumptions.</p>
+         <p class="cs-body-text">This could balance the trade off between "walk-away delegation" and control for users who sit around to watch Manus. I'm curious if data suggests that users prefer this timer removed; 1 participant thought the timer was "stressful" and I concur.</p>
+      
+        <img src="images/manus_decision.png" alt="Decision screen showing flagged AI choices" class="cs-body-image">
+        <p class="cs-body-text">When Manus skips questions, I designed for Manus to state what decisions it made when delivering its ready artefact. This gives users reassurance and allows them to jump in to iterate further with Manus if they disagree; again, the principles of recognition over recall apply.</p>
+        </div>
+    </section>
+
+    <!-- Section 3: Copy -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">From status updates to trust-building honesty</h2>
+        <p class="cs-body-text">Manus&rsquo;s copy is confident and forward-moving. But a few patterns erode trust.</p>
+        <p class="cs-body-text">As I showed above, Manus currently doesn't flag risks that it may have discovered.</p>
+        <p class="cs-body-text">Manus also acts, but fails to share <i>why</i>. Without this reasoning, its harder for users to stay engaged, or backtrack if Manus has made a decision they disagree with.</p>
+        <blockquote class="cs-pullquote">
+              <p>&ldquo;After 5 minutes of waiting, I started to lose interest... I couldn't do anything except to wait. I think it&rsquo;s also got to do with the fact that it starts to get technical, I don&rsquo;t understand what it is doing.</p>
+              <cite class="cs-pullquote-cite">&mdash; Participant 5, non-developer</cite>
+            </blockquote>
+        <p class="cs-body-text">When Manus hits an error, its copy doesn't show it obviously. The fix gets presented as if it was the plan all along.</p>
+        <img src="images/manus_conversational_design.jpg" alt="Analysis of Manus conversational design patterns" class="cs-body-image">
+        <p class="cs-body-text">I rewrote these moments to acknowledge the stumble and recovery. Showing failure and recovery signals resilience.</p>
+        <p class="cs-body-text">When Manus delivers artefacts, it self-praises almost too confidently. This backfires if its output may not be on par, causing users to doubt Manus' judgment on everything else.</p>
+        <img src="images/manus_deliverable_text_current.jpg" alt="Current Manus conversational copy patterns" class="cs-body-image">
+        <p class="cs-body-text">Participant 6 shared, "I did not like what it generated. I don't think it gives me bank vibes... the final outcome also looks off to me."</p>
+        <img src="images/manus_deliverable_text_new.jpg" alt="Redesigned Manus conversational copy" class="cs-body-image">
+        <p class="cs-body-text">My iterated version is warm but sounds more neutral, pitching the generated output as something for users' review. The goal here is to provide users' quick next steps they may not catch on their own, which subtly encourages them to iterate it further with Manus.</p>
+        <p class="cs-body-text">To accommodate more text on screen and let the design breathe, I increased padding between components.</p>
+      </div>
+    </section>
+
+    <!-- Section 4: Delivery screen -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">The delivery screen should feel like an unveiling, not a sales pitch</h2>
+        <p class="cs-body-text">The screen where Manus delivers its artifact is its core selling point, yet it doesn't come across this way on a laptop screen (~most common viewport width of 1280px). </p>
+        <img src="images/manus_deliverable_current.png" alt="Annotated current delivery screen with 7 competing elements labeled" class="cs-body-image">
+        <p class="cs-body-text">Manus' deliverable (starred pink box) is the star of the show, but it's barely seen with only ~30% of the viewport. "Task completed" (green boxes) is repetitive; users would know if they saw the deliverable clearly. Worse still, many call-to-actions (dotted blue boxes) fight for the user's attention.</p>
+         <img src="images/manus_deliverable_3.gif" alt="GIF walkthrough of the Manus delivery screen redesign" class="cs-body-image">
+        <p class="cs-body-text">In my iteration, the sidebar auto-collapses so users can focus on Manus' artefact (Manus' computer would too, though I didn't mock this up). I removed the &ldquo;Task completed&rdquo; badge as it&rsquo;s indicated in the progress bar and moved the upsell to a dismissible banner directing users to the persistent free trial button.</p>
+        <img src="images/manus_deliverable_stars.gif" alt="Redesigned star rating interaction on the Manus delivery screen" class="cs-body-image">
+        <p class="cs-body-text">I relocated the star rating to when users actually view the prototype to reduce clutter on the main screen while increasing possible accuracy of users' star rating by locating it nearer the full prototype display.</p>
+        <p class="cs-body-text">In terms of conversational design, I changed &ldquo;Suggested follow-ups&rdquo; to &ldquo;Tell me what you want next,&rdquo; which feels warmer and invites engagement.</p>
+        <p class="cs-body-text">Manus currently only offers expansion options after delivery (e.g. add a widget, build a new page). I added a refinement path (e.g. adjust colors, add your brand kit) for users who want to iterate on what they have before building more, since my participants wanted more control over what Manus was doing to the output at that point. Which paths actually drive stronger engagement is a question for usage data to answer.</p>
+        <p class="cs-body-text">Importantly, I added a compliance-related item (replacing placeholder MAS credentials) as an option to position Manus as a trusted advisor for users.</p>
+      </div>
+    </section>
+
+    <!-- Section 5: Metrics -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">How to know if it&rsquo;s working</h2>
+        <p class="cs-body-text">Usability tests or A/B testing can be conducted on these protoypes on different user segments (e.g. developer vs non-deveoper; average user vs power user) to test and learn if they increase trust in Manus and its generated artefacts, and increase engagement or conversion.</p>
+        <p class="cs-body-text">Two signals would indicate whether these changes are working.</p>
+        <p class="cs-body-text">First, mid-task intervention rate. If users are (re)directing Manus by responding to these questions, that could signal that they feel empowered to steer. I&rsquo;d also track whether those interventions lead to better outcomes, such as improved star ratings on task completion. I&rsquo;d note, though, that star ratings can be affected by other outcomes, like server stability or task complexity.</p>
+        <p class="cs-body-text">Second, qualitative recall. If given the chance, I&rsquo;d conduct user studies to see if users can explain why the AI made its choices. We can note deepened transparency if users can narrate reasoning instead of activity.</p>
+      </div>
+    </section>
+
+    <!-- Section 6: Reflections -->
+    <section class="cs-section">
+      <div class="cs-container">
+        <h2 class="cs-section-title">What I&rsquo;d do next</h2>
+        <p class="cs-body-text">I&rsquo;d push for more participants and a wider range of task types beyond website building to see if the trust patterns I discovered hold across other use cases.</p>
+        <p class="cs-body-text">More specifically, I&rsquo;d look at improving non-developers' experiences with Manus, in line with Manus' expansion in the general consumer market. 2 of the non-developer participants mention some form of confusion with the technicalities of Manus&rsquo;s actions, suggesting that a &ldquo;translation&rdquo; layer for non-technical folks could be helpful to build their confidence and engagement.</p>
+        <p class="cs-body-text">In this case study, I focused on the chat panel and delivery experience. I see an opportunity to relook at how the Manus Computer is designed, so that it surfaces reasoning alongside activity that engages non-technical users better.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- CASE STUDY NAVIGATION -->
+  <nav class="cs-nav-bar">
+    <div class="cs-nav-container">
+      <a href="/task" class="cs-nav-link cs-nav-prev">
+        <span class="cs-nav-direction">Previous</span>
+        <span class="cs-nav-title">Was our to-do list asking users to do a little too much?</span>
+      </a>
+      <a href="/#UX" class="cs-nav-link cs-nav-all">All Case Studies</a>
+      <a href="/search" class="cs-nav-link cs-nav-next">
+        <span class="cs-nav-direction">Next</span>
+        <span class="cs-nav-title">Pivoting to solve the right problems so that users can find the right thing</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <div class="footer-wrapper">
+    <footer class="footer-component">
+      <div class="footer-container">
+        <div class="footer-content">
+          <span class="footer-text">Thanks for stopping by my little corner of the Internet.</span>
+          <span class="footer-copyright">&copy; 2026 Amanda Sarah Chin</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="lightbox-overlay" id="lightboxOverlay"><img class="lightbox-img" id="lightboxImg" alt=""></div>
+  <script src="script.js"></script>
+</body>
+</html>

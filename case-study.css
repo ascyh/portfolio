@@ -92,6 +92,41 @@
   cursor: zoom-in;
 }
 
+.cs-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 80px;
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  border: 2px dashed #b0a890;
+  border-radius: 12px;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(176, 168, 144, 0.06) 10px,
+    rgba(176, 168, 144, 0.06) 20px
+  );
+  color: #8a8068;
+  text-align: center;
+}
+
+.cs-placeholder::before {
+  content: "\1F4F7";
+  font-size: 1.25rem;
+}
+
+.cs-placeholder-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 /* ===== LIGHTBOX ===== */
 .lightbox-overlay {
   position: fixed;

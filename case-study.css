@@ -136,18 +136,20 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.85);
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: -1;
   opacity: 0;
-  transition: opacity 0.3s;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
   cursor: zoom-out;
 }
 
 .lightbox-overlay.active {
-  display: flex;
+  z-index: 1000;
   opacity: 1;
+  visibility: visible;
 }
 
 .lightbox-img {
